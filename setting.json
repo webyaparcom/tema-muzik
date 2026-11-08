@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Kayıt ve miksaj; görseller temsilîdir.",
+    "en": "Recording and mixing; images are representative.",
+    "ar": "تسجيل ومكساج؛ الصور تمثيلية."
+  },
+  "keyword": {
+    "tr": "müzik, stüdyo, kayıt",
+    "en": "music, studio, recording",
+    "ar": "موسيقى، استوديو، تسجيل"
+  },
+  "category": "Kurumsal",
+  "name": "Frekans Stüdyo",
+  "domain": "muzik.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "montserrat",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#8254EE",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "4px",
+    "--mx-radius-md": "6px",
+    "--mx-radius-lg": "8px",
+    "--mx-radius-xl": "11px"
+  },
+  "icon": "icon.png"
+}
