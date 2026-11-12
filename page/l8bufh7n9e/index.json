@@ -6,14 +6,14 @@
     "ar": "خدماتنا"
   },
   "description": {
-    "tr": "Demden mastera; kayıttan teslim.",
-    "en": "From demo to master; from recording to delivery.",
-    "ar": "من الديمو إلى المستزر؛ من التسجيل إلى التسليم."
+    "tr": "Demodan yayına hazır şarkıya; her aşama tek çatı altında.",
+    "en": "From a demo to a release-ready song, every stage under one roof.",
+    "ar": "من النسخة التجريبية إلى أغنية جاهزة للنشر، كل المراحل تحت سقف واحد."
   },
   "keyword": {
-    "tr": "Ses & Stüdyo",
-    "en": "Sound & Studio",
-    "ar": "صوت واستوديو"
+    "tr": "Ses ve stüdyo",
+    "en": "Sound & studio",
+    "ar": "الصوت والاستوديو"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -36,5 +36,5 @@
     "ar": "خدماتنا"
   },
   "date": "2026-11-05T18:57:26.867Z",
-  "update": "2026-11-05T23:44:45.590Z"
+  "update": "2026-11-12T07:36:36.743Z"
 }

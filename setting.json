@@ -2,14 +2,14 @@
   "order": false,
   "user": false,
   "description": {
-    "tr": "Kayıt ve miksaj; görseller temsilîdir.",
-    "en": "Recording and mixing; images are representative.",
-    "ar": "تسجيل ومكساج؛ الصور تمثيلية."
+    "tr": "Müzik kayıt stüdyosu: vokal ve enstrüman kaydı, miksaj, mastering ve podcast prodüksiyonu; görseller temsilîdir.",
+    "en": "Music recording studio: vocal and instrument tracking, mixing, mastering and podcast production; images are representative.",
+    "ar": "استوديو تسجيل موسيقي: تسجيل الغناء والآلات والميكس والماسترينغ وإنتاج البودكاست؛ الصور تمثيلية."
   },
   "keyword": {
-    "tr": "müzik, stüdyo, kayıt",
-    "en": "music, studio, recording",
-    "ar": "موسيقى، استوديو، تسجيل"
+    "tr": "kayıt stüdyosu, miksaj, mastering, podcast, vokal kaydı",
+    "en": "recording studio, mixing, mastering, podcast, vocal recording",
+    "ar": "استوديو تسجيل، ميكس، ماسترينغ، بودكاست، تسجيل غناء"
   },
   "category": "Kurumsal",
   "name": "Frekans Stüdyo",

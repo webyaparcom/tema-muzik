@@ -8,9 +8,9 @@
         "ar": "خدماتنا"
       },
       "description": {
-        "tr": "Demden mastera; kayıttan teslim.",
-        "en": "From demo to master; from recording to delivery.",
-        "ar": "من الديمو إلى المستزر؛ من التسجيل إلى التسليم."
+        "tr": "Demodan yayına hazır şarkıya; her aşama tek çatı altında.",
+        "en": "From a demo to a release-ready song, every stage under one roof.",
+        "ar": "من النسخة التجريبية إلى أغنية جاهزة للنشر، كل المراحل تحت سقف واحد."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -49,9 +49,9 @@
       },
       "pathnext": "",
       "description": {
-        "tr": "Kayıt ve miksaj; görseller temsilîdir.",
-        "en": "Recording and mixing; images are representative.",
-        "ar": "تسجيل ومكساج؛ الصور تمثيلية."
+        "tr": "Kayıt ve miksaj stüdyosu; görseller temsilîdir.",
+        "en": "Recording and mixing studio; images are representative.",
+        "ar": "استوديو تسجيل وميكس؛ الصور تمثيلية."
       }
     },
     {

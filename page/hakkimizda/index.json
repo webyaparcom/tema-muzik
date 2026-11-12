@@ -21,9 +21,9 @@
   },
   "pathnext": "",
   "description": {
-    "tr": "Kayıt ve miksaj; görseller temsilîdir.",
-    "en": "Recording and mixing; images are representative.",
-    "ar": "تسجيل ومكساج؛ الصور تمثيلية."
+    "tr": "Kayıt ve miksaj stüdyosu; görseller temsilîdir.",
+    "en": "Recording and mixing studio; images are representative.",
+    "ar": "استوديو تسجيل وميكس؛ الصور تمثيلية."
   },
   "spot": {
     "tr": "",
@@ -42,6 +42,6 @@
     "ar": "من نحن"
   },
   "text": {},
-  "update": "2026-11-05T23:44:45.593Z",
+  "update": "2026-11-12T07:36:36.746Z",
   "date": "2026-10-30"
 }
