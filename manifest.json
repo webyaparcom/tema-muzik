@@ -1,7 +1,7 @@
 {
   "name": "Frekans Stüdyo",
   "short_name": "Frekans Stüd",
-  "description": "Kayıt ve miksaj; görseller temsilîdir.",
+  "description": "Müzik kayıt stüdyosu: vokal ve enstrüman kaydı, miksaj, mastering ve podcast prodüksiyonu; görseller temsilîdir.",
   "start_url": "/tr/",
   "scope": "/",
   "display": "standalone",

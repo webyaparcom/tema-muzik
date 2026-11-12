@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -766,7 +772,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1478,9 +1489,9 @@
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "cta": {
-          "tr": "Teklif al",
-          "en": "Get a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Seans iste",
+          "en": "Book a session",
+          "ar": "احجز جلسة"
         },
         "cta_url": "teklif-al"
       },
@@ -1533,28 +1544,28 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "Müzik stüdyosu",
-          "en": "Music studio",
-          "ar": "استوديو موسيقى"
+          "tr": "Kayıt stüdyosu",
+          "en": "Recording studio",
+          "ar": "استوديو تسجيل"
         },
         "title": {
-          "tr": "Kayıt, temiz",
-          "en": "The take, clean",
-          "ar": "التسجيل نظيف"
+          "tr": "Sesiniz, stüdyo kalitesinde",
+          "en": "Your sound, studio quality",
+          "ar": "صوتك بجودة الاستوديو"
         },
         "metin": {
-          "tr": "Frekans Stüdyo, kayıt ve miksaj sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Frekans offers recording and mixing. Images are representative and text is fictional.",
-          "ar": "يقترى فركانس تسجيل ومكساج. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Vokal ve enstrüman kaydı, miksaj, mastering ve podcast prodüksiyonu; akustik olarak düzenlenmiş odalarda. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Vocal and instrument tracking, mixing, mastering and podcast production in acoustically treated rooms. Images are representative; text is fictional.",
+          "ar": "تسجيل الغناء والآلات والميكس والماسترينغ وإنتاج البودكاست في غرف معالَجة صوتيًا. الصور تمثيلية والنصوص افتراضية."
         },
         "cta1": {
-          "tr": "Sesler",
-          "en": "Sounds",
-          "ar": "أصوات"
+          "tr": "Hizmetlerimiz",
+          "en": "Our services",
+          "ar": "خدماتنا"
         },
         "cta1_url": "hizmetler",
         "cta2": {
-          "tr": "Oturum iste",
+          "tr": "Seans iste",
           "en": "Book a session",
           "ar": "احجز جلسة"
         },
@@ -1601,9 +1612,9 @@
         "radius": "16px",
         "sure": 1000,
         "title": {
-          "tr": "Nasıl kaydediyoruz?",
-          "en": "How do we record?",
-          "ar": "كيف نسجل؟"
+          "tr": "Kayıttan masterına",
+          "en": "From tracking to master",
+          "ar": "من التسجيل إلى الماستر"
         },
         "description": {
           "tr": "Kurgusal demo verileri.",
@@ -1614,12 +1625,12 @@
       "data": [
         {
           "deger": 40,
-          "sonek": "",
+          "sonek": "+",
           "ikon": "music_note",
           "etiket": {
-            "tr": "Parça",
-            "en": "Songs",
-            "ar": "أغاني"
+            "tr": "Kayıt edilen parça",
+            "en": "Tracks recorded",
+            "ar": "مقطوعة مسجلة"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1628,13 +1639,13 @@
           }
         },
         {
-          "deger": 6,
+          "deger": 24,
           "sonek": "",
           "ikon": "mic",
           "etiket": {
             "tr": "Kayıt kanalı",
             "en": "Recording channels",
-            "ar": "قنوات تسجيل"
+            "ar": "قناة تسجيل"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1643,13 +1654,13 @@
           }
         },
         {
-          "deger": 90,
-          "sonek": "%",
-          "ikon": "tune",
+          "deger": 15,
+          "sonek": "",
+          "ikon": "podcasts",
           "etiket": {
-            "tr": "Seans tamamlanma",
-            "en": "Session completion",
-            "ar": "اكتمال الجلسة"
+            "tr": "Podcast bölümü",
+            "en": "Podcast episodes",
+            "ar": "حلقة بودكاست"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1662,9 +1673,9 @@
           "sonek": "",
           "ikon": "graphic_eq",
           "etiket": {
-            "tr": "Oda",
-            "en": "Rooms",
-            "ar": "غرف"
+            "tr": "Stüdyo odası",
+            "en": "Studio rooms",
+            "ar": "غرفة استوديو"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1695,98 +1706,98 @@
         "badgebg": "#2E6BFF",
         "badgecolor": "#ffffff",
         "badge": {
-          "tr": "Ses & Stüdyo",
-          "en": "Sound & Studio",
-          "ar": "صوت واستوديو"
+          "tr": "Ses ve stüdyo",
+          "en": "Sound & studio",
+          "ar": "الصوت والاستوديو"
         },
         "title": {
-          "tr": "Nasıl kaydediyoruz?",
-          "en": "How do we record?",
-          "ar": "كيف نسجل؟"
+          "tr": "Kayıttan masterına",
+          "en": "From tracking to master",
+          "ar": "من التسجيل إلى الماستر"
         },
         "description": {
-          "tr": "Demden mastera; kayıttan teslim.",
-          "en": "From demo to master; from recording to delivery.",
-          "ar": "من الديمو إلى المستزر؛ من التسجيل إلى التسليم."
+          "tr": "Demodan yayına hazır şarkıya; her aşama tek çatı altında.",
+          "en": "From a demo to a release-ready song, every stage under one roof.",
+          "ar": "من النسخة التجريبية إلى أغنية جاهزة للنشر، كل المراحل تحت سقف واحد."
         }
       },
       "data": [
         {
-          "icon": "graphic_eq",
+          "icon": "mic",
           "name": {
-            "tr": "Kayıt",
-            "en": "Recording",
-            "ar": "تسجيل"
+            "tr": "Vokal ve enstrüman kaydı",
+            "en": "Vocal & instrument recording",
+            "ar": "تسجيل الغناء والآلات"
           },
           "description": {
-            "tr": "Vokal ve enstrüman kaydı.",
-            "en": "Vocal and instrument recording.",
-            "ar": "تسجيل غناء وآلة."
+            "tr": "Ayrı vokal kabini ve canlı kayıt odası.",
+            "en": "A separate vocal booth and a live room.",
+            "ar": "كابينة غناء مستقلة وغرفة تسجيل حي."
           }
         },
         {
           "icon": "tune",
           "name": {
-            "tr": "Miks",
-            "en": "Mix",
-            "ar": "ميكس"
+            "tr": "Miksaj",
+            "en": "Mixing",
+            "ar": "الميكس"
           },
           "description": {
-            "tr": "Karışım ve denge (demo).",
-            "en": "Mix and balance (demo).",
-            "ar": "ميكس وتوازن (تجريبي)."
+            "tr": "Kanalların dengesi, efektler ve stereo yerleşim.",
+            "en": "Channel balance, effects and stereo placement.",
+            "ar": "توازن القنوات والمؤثرات والتوزيع الستيريو."
           }
         },
         {
-          "icon": "music_note",
+          "icon": "graphic_eq",
           "name": {
-            "tr": "Master",
-            "en": "Master",
-            "ar": "مستزر"
+            "tr": "Mastering",
+            "en": "Mastering",
+            "ar": "الماسترينغ"
           },
           "description": {
-            "tr": "Nihai ses işi.",
-            "en": "Final sound work.",
-            "ar": "مشغل الصوت النهائى."
+            "tr": "Platformlar için ses seviyesi ve son rötuş.",
+            "en": "Loudness and final polish for streaming platforms.",
+            "ar": "ضبط مستوى الصوت واللمسة الأخيرة لمنصات البث."
           }
         },
         {
           "icon": "podcasts",
           "name": {
-            "tr": "Podcast",
-            "en": "Podcast",
-            "ar": "بودكاست"
+            "tr": "Podcast prodüksiyonu",
+            "en": "Podcast production",
+            "ar": "إنتاج البودكاست"
           },
           "description": {
-            "tr": "Bölüm ve yayın planı.",
-            "en": "Episode and broadcast plan.",
-            "ar": "خطة حلقة وبث."
+            "tr": "Kayıt, montaj ve bölüm teslimi.",
+            "en": "Recording, editing and episode delivery.",
+            "ar": "التسجيل والمونتاج وتسليم الحلقات."
           }
         },
         {
-          "icon": "hearing",
+          "icon": "queue_music",
           "name": {
-            "tr": "Rehab",
-            "en": "Rehab",
-            "ar": "إعادة تأهيل"
+            "tr": "Aranjman ve prodüksiyon",
+            "en": "Arrangement & production",
+            "ar": "التوزيع والإنتاج الموسيقي"
           },
           "description": {
-            "tr": "Dinleme odası (demo).",
-            "en": "Listening room (demo).",
-            "ar": "قاعة استماع (تجريبي)."
+            "tr": "Şarkınız için düzenleme ve eşlik üretimi.",
+            "en": "Arrangement and backing tracks for your song.",
+            "ar": "توزيع موسيقي وإنتاج مقطوعات مرافقة لأغنيتك."
           }
         },
         {
-          "icon": "mic",
+          "icon": "headphones",
           "name": {
-            "tr": "Stüdyo seansı",
-            "en": "Studio session",
-            "ar": "جلسة استوديو"
+            "tr": "Prova ve dinleme odası",
+            "en": "Rehearsal & listening room",
+            "ar": "غرفة بروفة واستماع"
           },
           "description": {
-            "tr": "Seans ve kayıt kaydı.",
-            "en": "Session and recording record.",
-            "ar": "جلسة وسجل تسجيل."
+            "tr": "Saatlik prova ve referans dinleme.",
+            "en": "Hourly rehearsal and reference listening.",
+            "ar": "بروفة بالساعة واستماع مرجعي."
           }
         }
       ],
@@ -1814,19 +1825,19 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
-          "tr": "Nasıl çalışırız?",
+          "tr": "Nasıl çalışıyoruz?",
           "en": "How we work",
           "ar": "كيف نعمل؟"
         },
         "title": {
-          "tr": "Dört adımda süreç",
-          "en": "Process in four steps",
-          "ar": "العملية في أربع خطوات"
+          "tr": "Dört adımda yayına hazır",
+          "en": "Four steps to release-ready",
+          "ar": "أربع خطوات إلى الجاهزية للنشر"
         },
         "description": {
-          "tr": "İlk görüşmeden teslimata aynı akış.",
-          "en": "The same flow, from first meeting to handover.",
-          "ar": "نفس التيار من أول لقاء إلى التسليم."
+          "tr": "Ön görüşmeden masterlanmış dosyaya.",
+          "en": "From the first chat to the mastered file.",
+          "ar": "من اللقاء التمهيدي إلى الملف النهائي بعد الماسترينغ."
         },
         "accentText": "#ffffff",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1836,53 +1847,53 @@
         {
           "year": "01",
           "title": {
-            "tr": "Dem",
-            "en": "Demo",
-            "ar": "ديمو"
+            "tr": "Ön görüşme",
+            "en": "Pre-session chat",
+            "ar": "لقاء تمهيدي"
           },
           "text": {
-            "tr": "Parça ve tempo seçimi.",
-            "en": "Song and tempo selection.",
-            "ar": "اختيار أغنية وتيمبو."
+            "tr": "Parça, tempo ve referans şarkılar konuşulur.",
+            "en": "We talk through the song, tempo and reference tracks.",
+            "ar": "نناقش الأغنية والإيقاع والأغاني المرجعية."
           }
         },
         {
           "year": "02",
           "title": {
-            "tr": "Kayıt",
-            "en": "Recording",
-            "ar": "تسجيل"
+            "tr": "Kayıt seansı",
+            "en": "Tracking session",
+            "ar": "جلسة التسجيل"
           },
           "text": {
-            "tr": "Takip ve rehber kayıt.",
-            "en": "Tracking and guide recording.",
-            "ar": "تتبع وتسكيل دليلي."
+            "tr": "Vokal ve enstrümanlar kayda alınır.",
+            "en": "Vocals and instruments are recorded.",
+            "ar": "يُسجَّل الغناء والآلات."
           }
         },
         {
           "year": "03",
           "title": {
-            "tr": "Miks",
-            "en": "Mix",
-            "ar": "ميكس"
+            "tr": "Miksaj",
+            "en": "Mixing",
+            "ar": "الميكس"
           },
           "text": {
-            "tr": "Denge ve seviye işi.",
-            "en": "Balance and level work.",
-            "ar": "توازن وشغل مستوى."
+            "tr": "Kanallar dengelenir; iki revizyon hakkı vardır.",
+            "en": "Channels are balanced; two revision rounds are included.",
+            "ar": "تُوازَن القنوات، مع جولتَي مراجعة."
           }
         },
         {
           "year": "04",
           "title": {
-            "tr": "Master",
-            "en": "Master",
-            "ar": "مستزر"
+            "tr": "Mastering ve teslim",
+            "en": "Mastering & delivery",
+            "ar": "الماسترينغ والتسليم"
           },
           "text": {
-            "tr": "Nihai ses ve teslim.",
-            "en": "Final sound and delivery.",
-            "ar": "الصوت النهائى وتسليم."
+            "tr": "Platformlara uygun dosyalar teslim edilir.",
+            "en": "Files ready for streaming platforms are delivered.",
+            "ar": "تُسلَّم ملفات جاهزة لمنصات البث."
           }
         }
       ],
@@ -1916,9 +1927,9 @@
           "ar": "فريقنا"
         },
         "title": {
-          "tr": "Sizi karşılayan ekip",
-          "en": "The team that welcomes you",
-          "ar": "الفريق الذي يستقبلك"
+          "tr": "Stüdyoda sizinle çalışanlar",
+          "en": "Who you will work with",
+          "ar": "من ستعمل معهم في الاستوديو"
         },
         "description": {
           "tr": "Kurgusal demo profiller.",
@@ -1932,42 +1943,42 @@
         {
           "name": "Serkan K.",
           "role": {
-            "tr": "Prodüktör",
-            "en": "Producer",
-            "ar": "منتج"
+            "tr": "Müzik prodüktörü",
+            "en": "Music producer",
+            "ar": "منتج موسيقي"
           },
           "bio": {
-            "tr": "9 yıl kayıt.",
-            "en": "9 years of recording.",
-            "ar": "٩ سنوات في التسجيل."
+            "tr": "Pop ve rock kayıtlarında 9 yıl.",
+            "en": "9 years on pop and rock records.",
+            "ar": "9 سنوات في تسجيلات البوب والروك."
           },
           "img": ""
         },
         {
           "name": "Elif M.",
           "role": {
-            "tr": "Mikser",
-            "en": "Mixing engineer",
-            "ar": "ميكسر"
+            "tr": "Miks ve mastering mühendisi",
+            "en": "Mixing & mastering engineer",
+            "ar": "مهندسة ميكس وماسترينغ"
           },
           "bio": {
-            "tr": "6 yıl miks.",
-            "en": "6 years of mix.",
-            "ar": "٦ سنوات في الميكس."
+            "tr": "Miksaj ve mastering üzerine 6 yıl.",
+            "en": "6 years of mixing and mastering.",
+            "ar": "6 سنوات في الميكس والماسترينغ."
           },
           "img": ""
         },
         {
           "name": "Burak D.",
           "role": {
-            "tr": "Teknik",
-            "en": "Studio technician",
-            "ar": "تقني"
+            "tr": "Kayıt teknisyeni",
+            "en": "Recording technician",
+            "ar": "فني تسجيل"
           },
           "bio": {
-            "tr": "4 yıl oda.",
-            "en": "4 years of room.",
-            "ar": "٤ سنوات في الغرفة."
+            "tr": "Oda akustiği ve mikrofon yerleşiminde 4 yıl.",
+            "en": "4 years in room acoustics and mic placement.",
+            "ar": "4 سنوات في صوتيات الغرفة ووضع الميكروفونات."
           },
           "img": ""
         }
@@ -1998,14 +2009,14 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "#f59e0b",
         "badge": {
-          "tr": "Müşteri yorumları",
-          "en": "Customer reviews",
-          "ar": "تقييمات العملاء"
+          "tr": "Yorumlar",
+          "en": "Reviews",
+          "ar": "التقييمات"
         },
         "title": {
-          "tr": "Müşterilerimiz ne diyor?",
-          "en": "What our customers say",
-          "ar": "ماذا يقول عملاؤنا؟"
+          "tr": "Müzisyenler ne diyor?",
+          "en": "What musicians say",
+          "ar": "ماذا يقول الموسيقيون؟"
         },
         "description": {
           "tr": "Kurgusal demo yorumlar.",
@@ -2019,46 +2030,46 @@
         {
           "name": "T. Ergin.",
           "role": {
-            "tr": "Sanatçı",
-            "en": "Artist",
-            "ar": "فنان"
+            "tr": "Solist",
+            "en": "Vocalist",
+            "ar": "مغنٍّ"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Kayıt net; seans sakin.",
-            "en": "Recording clean; session calm.",
-            "ar": "تسجيل نظيف؛ جلسة هادئة."
+            "tr": "Vokal kabini çok rahat; ilk seansta iki şarkıyı bitirdik.",
+            "en": "The vocal booth is very comfortable; we finished two songs in the first session.",
+            "ar": "كابينة الغناء مريحة جدًا؛ أنهينا أغنيتين في الجلسة الأولى."
           }
         },
         {
           "name": "H. Sönmez.",
           "role": {
-            "tr": "Podcast",
+            "tr": "Podcast yapımcısı",
             "en": "Podcaster",
-            "ar": "بودكاست"
+            "ar": "منتج بودكاست"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Bölüm zamanında teslim edildi.",
-            "en": "Episode delivered on time.",
-            "ar": "تُسلّمت الحلقة في الوقت."
+            "tr": "Bölümler söz verilen günde teslim edildi.",
+            "en": "Episodes were delivered on the promised day.",
+            "ar": "سُلّمت الحلقات في اليوم الموعود."
           }
         },
         {
           "name": "C. Ak.",
           "role": {
-            "tr": "Müşteri",
-            "en": "Client",
-            "ar": "زبون"
+            "tr": "Grup üyesi",
+            "en": "Band member",
+            "ar": "عضو فرقة"
           },
           "rating": 4,
           "img": "",
           "text": {
-            "tr": "Miks seviyeleri dengeli.",
-            "en": "Mix levels balanced.",
-            "ar": "مستويات الميكس متوازنة."
+            "tr": "Miks dengeli oldu; iki revizyonla istediğimiz sese ulaştık.",
+            "en": "The mix came out balanced; two revisions got us the sound we wanted.",
+            "ar": "جاء الميكس متوازنًا، وبمراجعتين وصلنا إلى الصوت الذي أردناه."
           }
         }
       ],
@@ -2103,19 +2114,19 @@
         "radius": "6px",
         "numara": true,
         "eyebrow": {
-          "tr": "Neyi iyi yaparız?",
-          "en": "What we do well",
-          "ar": "ما نتقنه؟"
+          "tr": "Stüdyoda neler var?",
+          "en": "What is in the studio",
+          "ar": "ماذا يوجد في الاستوديو؟"
         },
         "title": {
-          "tr": "Nasıl kaydediyoruz?",
-          "en": "How do we record?",
-          "ar": "كيف نسجل؟"
+          "tr": "Kayıttan masterına",
+          "en": "From tracking to master",
+          "ar": "من التسجيل إلى الماستر"
         },
         "description": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
-          "en": "Images are representative; this is a setup demo.",
-          "ar": "الصور تمثيلية وهذا عرض تجريبي."
+          "tr": "Görseller temsilîdir; içerik kurgusaldır.",
+          "en": "Images are representative; the content is fictional.",
+          "ar": "الصور تمثيلية والمحتوى افتراضي."
         },
         "ctaLabel": {
           "tr": "Ayrıntı",
@@ -2126,14 +2137,14 @@
       "data": [
         {
           "baslik": {
-            "tr": "Kayıt",
-            "en": "Recording",
-            "ar": "تسجيل"
+            "tr": "Vokal ve enstrüman kaydı",
+            "en": "Vocal & instrument recording",
+            "ar": "تسجيل الغناء والآلات"
           },
           "metin": {
-            "tr": "Vokal ve enstrüman kaydı.",
-            "en": "Vocal and instrument recording.",
-            "ar": "تسجيل غناء وآلة."
+            "tr": "Ayrı vokal kabini ve canlı kayıt odası.",
+            "en": "A separate vocal booth and a live room.",
+            "ar": "كابينة غناء مستقلة وغرفة تسجيل حي."
           },
           "img": "radyo-mikrofon.webp",
           "alt": {
@@ -2145,14 +2156,14 @@
         },
         {
           "baslik": {
-            "tr": "Miks",
-            "en": "Mix",
-            "ar": "ميكس"
+            "tr": "Miksaj",
+            "en": "Mixing",
+            "ar": "الميكس"
           },
           "metin": {
-            "tr": "Karışım ve denge (demo).",
-            "en": "Mix and balance (demo).",
-            "ar": "ميكس وتوازن (تجريبي)."
+            "tr": "Kanalların dengesi, efektler ve stereo yerleşim.",
+            "en": "Channel balance, effects and stereo placement.",
+            "ar": "توازن القنوات والمؤثرات والتوزيع الستيريو."
           },
           "img": "radyo-mikser.webp",
           "alt": {
@@ -2164,14 +2175,14 @@
         },
         {
           "baslik": {
-            "tr": "Master",
-            "en": "Master",
-            "ar": "مستزر"
+            "tr": "Mastering",
+            "en": "Mastering",
+            "ar": "الماسترينغ"
           },
           "metin": {
-            "tr": "Nihai ses işi.",
-            "en": "Final sound work.",
-            "ar": "مشغل الصوت النهائى."
+            "tr": "Platformlar için ses seviyesi ve son rötuş.",
+            "en": "Loudness and final polish for streaming platforms.",
+            "ar": "ضبط مستوى الصوت واللمسة الأخيرة لمنصات البث."
           },
           "img": "radyo-kulaklik.webp",
           "alt": {
@@ -2229,14 +2240,14 @@
         "radius": "6px",
         "showTitle": true,
         "title": {
-          "tr": "Birlikte çalıştığımız kuruluşlar",
-          "en": "Organisations we work with",
-          "ar": "جهات نعمل معها"
+          "tr": "Birlikte çalıştığımız yapımlar",
+          "en": "Productions we have worked with",
+          "ar": "جهات أنتجنا معها"
         },
         "description": {
-          "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir.",
-          "en": "Fictional partner names; they do not belong to a real organisation.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهة حقيقية."
+          "tr": "Kurgusal plak, festival ve yayın adları; gerçek bir kuruluşa ait değildir.",
+          "en": "Fictional label, festival and broadcaster names; they do not belong to a real organisation.",
+          "ar": "أسماء شركات إنتاج ومهرجانات وإذاعات افتراضية لا تعود إلى جهة حقيقية."
         },
         "listLabel": {
           "tr": "Referans logoları",
@@ -2246,22 +2257,22 @@
       },
       "data": [
         {
-          "name": "Demo Sanatçı"
+          "name": "Demo Plak"
         },
         {
-          "name": "Demo Podcast"
+          "name": "Demo Festival"
         },
         {
-          "name": "Demo Miks"
+          "name": "Demo Radyo"
         },
         {
-          "name": "Demo Oda"
+          "name": "Demo Müzik Okulu"
         },
         {
-          "name": "Demo Seans"
+          "name": "Demo Podcast Ağı"
         },
         {
-          "name": "Demo Kayıt"
+          "name": "Demo Sahne"
         }
       ],
       "veri": {
@@ -2304,51 +2315,91 @@
       },
       "data": [
         {
-          "soru": {
-            "tr": "Seans süresi ne kadar?",
+          "question": {
+            "tr": "Bir seans ne kadar sürer?",
             "en": "How long is a session?",
-            "ar": "مدة الجلسة كم?"
+            "ar": "كم تستغرق الجلسة؟"
           },
-          "cevap": {
-            "tr": "Parça ve seviyeye göre değişir; demo metni değil.",
-            "en": "It varies by song and level; not a demo text.",
-            "ar": "تتغير حسب الأغنية والمستوى؛ غير نص تجريبي."
-          }
-        },
-        {
+          "answer": {
+            "tr": "Seanslar saatlik ayrılır; şarkı sayısına göre süre planlanır.",
+            "en": "Sessions are booked by the hour and planned around the number of songs.",
+            "ar": "تُحجز الجلسات بالساعة ويُخطَّط الوقت حسب عدد الأغاني."
+          },
           "soru": {
-            "tr": "Kayıt dosyaları kimde?",
-            "en": "Where are the recording files?",
-            "ar": "أين ملفات التسجيل?"
+            "tr": "Bir seans ne kadar sürer?",
+            "en": "How long is a session?",
+            "ar": "كم تستغرق الجلسة؟"
           },
           "cevap": {
-            "tr": "Stüdyo arşivinde; kopya müşteriye (demo).",
-            "en": "In the studio archive; copy to client (demo).",
-            "ar": "في أرشيف الاستوديو؛ نسخة للعميل (تجريبي)."
+            "tr": "Seanslar saatlik ayrılır; şarkı sayısına göre süre planlanır.",
+            "en": "Sessions are booked by the hour and planned around the number of songs.",
+            "ar": "تُحجز الجلسات بالساعة ويُخطَّط الوقت حسب عدد الأغاني."
           }
         },
         {
+          "question": {
+            "tr": "Kendi enstrümanımı getirebilir miyim?",
+            "en": "Can I bring my own instrument?",
+            "ar": "هل يمكنني إحضار آلتي الخاصة؟"
+          },
+          "answer": {
+            "tr": "Evet; gitar, bas ve klavye için kayıt odası ve DI girişleri hazırdır.",
+            "en": "Yes; the live room and DI inputs are ready for guitar, bass and keys.",
+            "ar": "نعم؛ غرفة التسجيل ومداخل DI جاهزة للغيتار والباص ولوحة المفاتيح."
+          },
+          "soru": {
+            "tr": "Kendi enstrümanımı getirebilir miyim?",
+            "en": "Can I bring my own instrument?",
+            "ar": "هل يمكنني إحضار آلتي الخاصة؟"
+          },
+          "cevap": {
+            "tr": "Evet; gitar, bas ve klavye için kayıt odası ve DI girişleri hazırdır.",
+            "en": "Yes; the live room and DI inputs are ready for guitar, bass and keys.",
+            "ar": "نعم؛ غرفة التسجيل ومداخل DI جاهزة للغيتار والباص ولوحة المفاتيح."
+          }
+        },
+        {
+          "question": {
+            "tr": "Sitedeki görseller ve veriler gerçek midir?",
+            "en": "Are the images and data on the site real?",
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
+            "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
+          },
           "soru": {
             "tr": "Sitedeki görseller ve veriler gerçek midir?",
             "en": "Are the images and data on the site real?",
-            "ar": "هل الصور والبيانات في الموقع حقيقية?"
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
           },
           "cevap": {
-            "tr": "Hayır; bu bir kuruluma örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
             "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
             "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
           }
         },
         {
+          "question": {
+            "tr": "Fiyatlar nasıl belirlenir?",
+            "en": "How are prices determined?",
+            "ar": "كيف تُحدَّد الأسعار؟"
+          },
+          "answer": {
+            "tr": "Seans süresi ve hizmete göre belirlenir; güncel fiyat için bizimle iletişime geçin.",
+            "en": "Prices depend on session length and service; contact us for current rates.",
+            "ar": "يعتمد السعر على مدة الجلسة والخدمة؛ تواصل معنا للأسعار الحالية."
+          },
           "soru": {
             "tr": "Fiyatlar nasıl belirlenir?",
             "en": "How are prices determined?",
-            "ar": "كيف تُحدَّد الأسعار?"
+            "ar": "كيف تُحدَّد الأسعار؟"
           },
           "cevap": {
-            "tr": "İhtiyacınıza göre teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
-            "en": "A quote based on your needs sets the price; a general range is not shown in this demo text.",
-            "ar": "يُحدَّد السعر عبر عرض سعر حسب احتياجاتك؛ ولا يُذكر نطاق عام في هذا النص التجريبي."
+            "tr": "Seans süresi ve hizmete göre belirlenir; güncel fiyat için bizimle iletişime geçin.",
+            "en": "Prices depend on session length and service; contact us for current rates.",
+            "ar": "يعتمد السعر على مدة الجلسة والخدمة؛ تواصل معنا للأسعار الحالية."
           }
         }
       ],
@@ -2406,14 +2457,14 @@
         "errcolor": "var(--mx-color-danger, #b42318)",
         "radius": "6px",
         "title": {
-          "tr": "Teklif isteyin",
-          "en": "Request a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Seans isteyin",
+          "en": "Request a session",
+          "ar": "اطلب جلسة"
         },
         "description": {
           "tr": "Bilgilerinizi bırakın; en geç iki iş günü içinde dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
           "en": "Leave your details; we reply within two business days. This form is a demo; it opens your e-mail client and stores no data.",
-          "ar": "اترك بياناتك وسنرد خلال يومي عمل. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات."
+          "ar": "اترك بياناتك؛ نردّ خلال يومي عمل على الأكثر. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يتم حفظ أي بيانات."
         },
         "panelTitle": {
           "tr": "Frekans Stüdyo",
@@ -2421,22 +2472,22 @@
           "ar": "Frekans Stüdyo"
         },
         "panelText": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
-          "en": "Images are representative; this is a setup demo.",
-          "ar": "الصور تمثيلية وهذا عرض تجريبي."
+          "tr": "Görseller temsilîdir; içerik kurgusaldır.",
+          "en": "Images are representative; the content is fictional.",
+          "ar": "الصور تمثيلية والمحتوى افتراضي."
         },
         "address": {
           "tr": "Frekans Sokak No: 9, Şahinbey, Gaziantep (kurgusal adres)",
           "en": "9 Frekans Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع موجة رقم 9، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "ar": "شارع فريكانس رقم 9، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 020 01 11",
         "whatsapp": "903420200111",
         "email": "mikrofon@frekans.example",
         "hours": {
           "tr": "Pzt–Cum 10:00 – 22:00",
-          "en": "Mon–Wed 10:00 – 22:00",
-          "ar": "الاثنين–الأربعاء 10:00 – 22:00"
+          "en": "Mon–Fri 10:00 – 22:00",
+          "ar": "الاثنين–الجمعة 10:00 – 22:00"
         },
         "mapUrl": "",
         "mapEmbed": "",
@@ -2477,9 +2528,9 @@
         },
         "social": [],
         "formTitle": {
-          "tr": "Teklif formu",
-          "en": "Quote form",
-          "ar": "نموذج الطلب"
+          "tr": "Seans formu",
+          "en": "Session form",
+          "ar": "نموذج الجلسة"
         },
         "nameLabel": {
           "tr": "Ad Soyad",
@@ -2510,25 +2561,25 @@
           {
             "id": "a",
             "name": {
-              "tr": "Yeni talep",
-              "en": "New request",
-              "ar": "طلب جديد"
+              "tr": "Kayıt seansı",
+              "en": "Recording session",
+              "ar": "جلسة تسجيل"
             }
           },
           {
             "id": "b",
             "name": {
-              "tr": "Ölçü ve keşif",
-              "en": "Measure and survey",
-              "ar": "قياس واستقصاء"
+              "tr": "Miksaj / mastering",
+              "en": "Mixing / mastering",
+              "ar": "ميكس / ماسترينغ"
             }
           },
           {
             "id": "c",
             "name": {
-              "tr": "Teknik soru",
-              "en": "Technical question",
-              "ar": "سؤال فني"
+              "tr": "Podcast",
+              "en": "Podcast",
+              "ar": "بودكاست"
             }
           },
           {
@@ -2615,7 +2666,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
@@ -2639,33 +2691,33 @@
           "ar": "Frekans Stüdyo"
         },
         "description": {
-          "tr": "Frekans Stüdyo, kayıt ve miksaj sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Frekans offers recording and mixing. Images are representative and text is fictional.",
-          "ar": "يقترى فركانس تسجيل ومكساج. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Frekans Stüdyo; vokal ve enstrüman kaydı, miksaj, mastering ve podcast prodüksiyonu sunan bir müzik kayıt stüdyosudur. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Frekans Studio is a music recording studio offering vocal and instrument tracking, mixing, mastering and podcast production. Images are representative; text is fictional.",
+          "ar": "فريكانس استوديو تسجيل موسيقي يقدّم تسجيل الغناء والآلات والميكس والماسترينغ وإنتاج البودكاست. الصور تمثيلية والنصوص افتراضية."
         },
         "name2": {
-          "tr": "Kayıt odası",
-          "en": "Recording room",
-          "ar": "غرفة التسجيل"
+          "tr": "Canlı kayıt odası",
+          "en": "Live room",
+          "ar": "غرفة التسجيل الحي"
         },
         "spot2": {
-          "tr": "Takip ve rehber aynı odada.",
-          "en": "Tracking and guide in the same room.",
-          "ar": "تتبع ودليل في نفس الغرفة."
+          "tr": "Akustik paneller ve ayrı vokal kabini.",
+          "en": "Acoustic panels and a separate vocal booth.",
+          "ar": "ألواح عزل صوتي وكابينة غناء منفصلة."
         },
-        "icon2": "verified",
+        "icon2": "mic_external_on",
         "name3": {
-          "tr": "Ritim defteri",
-          "en": "Rhythm book",
-          "ar": "دفتر الإيقاع"
+          "tr": "Seans defteri",
+          "en": "Session log",
+          "ar": "سجل الجلسات"
         },
         "spot3": {
-          "tr": "Her dem için tempo ve parça kaydı.",
-          "en": "A tempo and song record for each demo.",
-          "ar": "سجل تييمبو وأغنية لكل ديمو."
+          "tr": "Her parça için tempo, tuş ve kayıt notları saklanır.",
+          "en": "Tempo, key and tracking notes are kept for every song.",
+          "ar": "تُحفظ ملاحظات الإيقاع والمقام والتسجيل لكل أغنية."
         },
-        "icon3": "schedule",
-        "img": "radyo-anten.webp",
+        "icon3": "edit_note",
+        "img": "radyo-hero-studyo.webp",
         "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
@@ -2730,8 +2782,8 @@
         },
         "description": {
           "tr": "Pzt–Cum 10:00 – 22:00",
-          "en": "Mon–Wed 10:00 – 22:00",
-          "ar": "الاثنين–الأربعاء 10:00 – 22:00"
+          "en": "Mon–Fri 10:00 – 22:00",
+          "ar": "الاثنين–الجمعة 10:00 – 22:00"
         },
         "phone": "+90 342 020 01 11",
         "whatsapp": "903420200111",
@@ -2739,7 +2791,7 @@
         "address": {
           "tr": "Frekans Sokak No: 9, Şahinbey, Gaziantep (kurgusal adres)",
           "en": "9 Frekans Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع موجة رقم 9، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "ar": "شارع فريكانس رقم 9، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "mapsUrl": "",
         "waMessage": {
@@ -2753,9 +2805,9 @@
           "ar": "اتصل بنا"
         },
         "callText": {
-          "tr": "Hafta içi 09:00 – 18:00",
-          "en": "Weekdays 09:00 – 18:00",
-          "ar": "أيام الأسبوع 09:00 – 18:00"
+          "tr": "Pzt–Cum 10:00 – 22:00",
+          "en": "Mon–Fri 10:00 – 22:00",
+          "ar": "الاثنين–الجمعة 10:00 – 22:00"
         },
         "callBtn": {
           "tr": "Ara",
@@ -2847,19 +2899,19 @@
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "radius": "6px",
         "title": {
-          "tr": "Kayıt sıcakken",
-          "en": "While the take is hot",
-          "ar": "بينما التسجيل ساخن"
+          "tr": "Şarkınız kayda hazır mı?",
+          "en": "Is your song ready to record?",
+          "ar": "هل أغنيتك جاهزة للتسجيل؟"
         },
         "text": {
-          "tr": "İki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
-          "en": "We reply within two business days. No data is stored on this demo site.",
-          "ar": "نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+          "tr": "Seans için formu doldurun; iki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
+          "en": "Fill in the form to book a session; we reply within two business days. No data is stored on this demo site.",
+          "ar": "املأ النموذج لحجز جلسة؛ نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
         },
         "btn1Label": {
-          "tr": "Formu doldurun",
-          "en": "Fill the form",
-          "ar": "املأ النموذج"
+          "tr": "Seans iste",
+          "en": "Book a session",
+          "ar": "احجز جلسة"
         },
         "btn1Url": "teklif-al",
         "btn2Label": {
@@ -2882,8 +2934,8 @@
         },
         "hours": {
           "tr": "Pzt–Cum 10:00 – 22:00",
-          "en": "Mon–Wed 10:00 – 22:00",
-          "ar": "الاثنين–الأربعاء 10:00 – 22:00"
+          "en": "Mon–Fri 10:00 – 22:00",
+          "ar": "الاثنين–الجمعة 10:00 – 22:00"
         },
         "hoursLabel": {
           "tr": "Çalışma saatleri",
@@ -3056,7 +3108,7 @@
         "address": {
           "tr": "Frekans Sokak No: 9, Şahinbey, Gaziantep (kurgusal adres)",
           "en": "9 Frekans Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع موجة رقم 9، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "ar": "شارع فريكانس رقم 9، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 020 01 11",
         "email": "mikrofon@frekans.example",

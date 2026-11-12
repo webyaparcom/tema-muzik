@@ -27,9 +27,9 @@
   "index": 0,
   "url": "",
   "text": {
-    "tr": "<h2>Misyonumuz</h2>\n<p>Üretimi, net fiyatı ve zamanında teslimi sunmak.</p>",
-    "en": "<h2>Our mission</h2>\n<p>To offer production, clear pricing and on-time delivery.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>تقديم الإنتاج والسعر الواضح والتسليم في الوقت.</p>"
+    "tr": "<h2>Misyonumuz</h2>\n<p>Müzisyenlere ve içerik üreticilerine rahat, temiz sesli ve şeffaf bir kayıt ortamı sunmak.</p>",
+    "en": "<h2>Our mission</h2>\n<p>To give musicians and creators a comfortable, clean-sounding and transparent recording environment.</p>",
+    "ar": "<h2>مهمتنا</h2>\n<p>أن نوفّر للموسيقيين وصنّاع المحتوى بيئة تسجيل مريحة ونقية الصوت وشفافة.</p>"
   },
   "title": {
     "tr": "Misyon",
@@ -37,7 +37,7 @@
     "ar": "المهمة"
   },
   "date": "2026-11-05T18:57:26.708Z",
-  "update": "2026-11-05T23:44:45.611Z",
+  "update": "2026-11-12T07:36:36.767Z",
   "sablonIzi": "a8a6ac234dced5af",
   "sablonIziDil": {
     "en": "3f5f6c628dec679f",
