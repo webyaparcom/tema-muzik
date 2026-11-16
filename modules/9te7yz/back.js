@@ -1,78 +1,90 @@
-/* ozellik-zigzag — sunucu tarafı: satırları dile çözer; yer tutucular: zzclass zzhead zzrows.
-   Veri: json.data[] (yoksa desing.satirlar) = [{baslik{}, metin{}, img, alt{}, url, ctaLabel{}?}] */
-var zzDes = json.desing || {};
-var zzLang = json.lang || "tr";
+/* ozellik-zigzag-2 — Özellik Kartları Izgarası (1 Kas 2026, T1-B varyant).
+   Yer tutucular: oz2cols oz2head oz2cards. Veri: json.data[] = [{baslik{}, metin{}, ikon?, img?, alt{}?, url?}].
+   Ortak yardımcılar: esc t guvenliHref gorselYol evet sayi metinleriYaz (desing metinleri kaçışlı). */
+var D = json.desing || {};
+var L = json.lang || "tr";
 
-function zzEsc(s) {
+/* HTML kaçışı — html'e giden her değer bundan geçer */
+function esc(s) {
   return String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
-function zzPick(v) { return wmPickLang(v, zzLang); }
-function zzUrl(v) {
-  var s = String(v == null ? "" : v).trim();
-  if (!s) { return ""; }
-  if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
-  if (s.charAt(0) === "/" || /^https?:\/\//i.test(s)) { return s; }
-  return "/img/" + s;
-}
-function zzHref(v) {
+/* Dil seçimi: aktif dil → tr → en → ilk anahtar (motorun wmPickLang'i) */
+function t(v) { return wmPickLang(v, L); }
+/* Bağlantı: dış/mailto/tel/# aynen; iç sayfa adı → dil önekli yol; javascript: vb. reddedilir */
+function guvenliHref(v) {
   var s = String(v == null ? "" : v).trim();
   if (!s) { return ""; }
   if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
   if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s) || s.charAt(0) === "/") { return s; }
   return wxLangInternalHref(s);
 }
-function zzBool(v, d) {
+/* Görsel yolu: "/" ve http(s) aynen; yalın ad → /img/<ad>; tehlikeli şema → "" */
+function gorselYol(v) {
+  var s = String(v == null ? "" : v).trim();
+  if (!s) { return ""; }
+  if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
+  if (s.charAt(0) === "/" || /^https?:\/\//i.test(s)) { return s; }
+  return "/img/" + s;
+}
+function evet(v, d) {
   if (v === undefined || v === null || v === "") { return d; }
   return !(v === false || v === "false" || v === 0 || v === "0");
 }
+function sayi(v, d, mn, mx) {
+  var n = parseInt(v, 10);
+  if (!isFinite(n)) { n = d; }
+  return Math.min(mx, Math.max(mn, n));
+}
+/* desing'deki düz metin / {tr,en,ar} değerlerini {{anahtar}} yerine KAÇIŞLI yazar.
+   Motor aynı yer tutucuyu ham yazardı; back.js önce davrandığı için kaçışsız değer html'e ulaşmaz. */
+function metinleriYaz() {
+  var k;
+  for (k in D) {
+    if (!Object.prototype.hasOwnProperty.call(D, k)) { continue; }
+    var v = D[k];
+    if (v == null) { continue; }
+    var dilli = typeof v === "object" && !Array.isArray(v) && (typeof v.tr === "string" || typeof v.en === "string");
+    if (typeof v === "object" && !dilli) { continue; }
+    var deger = esc(t(v));
+    var desen = new RegExp("\\{\\{" + String(k).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\}\\}", "g");
+    html = html.replace(desen, function () { return deger; });
+  }
+}
 
-var zzItems = Array.isArray(json.data) && json.data.length ? json.data : (Array.isArray(zzDes.satirlar) ? zzDes.satirlar : []);
-var zzStil = String(zzDes.stil || "cerceve");
-if (zzStil !== "cerceve" && zzStil !== "yuzen" && zzStil !== "sade") { zzStil = "cerceve"; }
-var zzNumara = zzBool(zzDes.numara, true);
-var zzCtaDef = zzPick(zzDes.ctaLabel);
-
-var zzRows = "";
-var zzN = 0;
-var zzi;
-for (zzi = 0; zzi < zzItems.length; zzi++) {
-  var it = zzItems[zzi] || {};
-  var baslik = zzPick(it.baslik);
-  var metin = zzPick(it.metin);
+var oz2Items = Array.isArray(json.data) ? json.data : [];
+var oz2Cols = sayi(D.columns, 3, 2, 4);
+var oz2Cta = t(D.ctaLabel);
+var oz2Cards = "";
+var oz2i;
+for (oz2i = 0; oz2i < oz2Items.length; oz2i++) {
+  var it = oz2Items[oz2i] || {};
+  var baslik = t(it.baslik);
+  var metin = t(it.metin);
   if (!baslik && !metin) { continue; }
-  zzN++;
-  var img = zzUrl(it.img);
-  var alt = zzPick(it.alt) || baslik;
-  var url = zzHref(it.url);
-  var cta = zzPick(it.ctaLabel) || zzCtaDef;
-  var no = zzN < 10 ? "0" + zzN : String(zzN);
-  var media = img
-    ? '<img class="modulex-zz-img" src="' + zzEsc(img) + '" alt="' + zzEsc(alt) + '" width="1200" height="900" loading="lazy" decoding="async" />'
-    : '<span class="modulex-zz-ph" role="img" aria-label="' + zzEsc(alt) + '"><span class="material-symbols-outlined" aria-hidden="true">' +
-      zzEsc(it.ikon || "auto_awesome") + "</span></span>";
-  zzRows += '<article class="modulex-zz-row">' +
-    '<div class="modulex-zz-media">' + media + "</div>" +
-    '<div class="modulex-zz-metin">' +
-    (zzNumara ? '<span class="modulex-zz-no" aria-hidden="true">' + no + "</span>" : "") +
-    (baslik ? '<h3 class="modulex-zz-h">' + zzEsc(baslik) + "</h3>" : "") +
-    (metin ? '<p class="modulex-zz-p">' + zzEsc(metin) + "</p>" : "") +
-    (url && cta ? '<a class="modulex-zz-link" href="' + zzEsc(url) + '"><span>' + zzEsc(cta) + '</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>' : "") +
-    "</div></article>";
+  var img = gorselYol(it.img);
+  var url = guvenliHref(it.url);
+  var medya = img
+    ? '<img class="modulex-oz2-img" src="' + esc(img) + '" alt="' + esc(t(it.alt)) + '" width="800" height="500" loading="lazy" decoding="async" />'
+    : '<span class="modulex-oz2-ikon" aria-hidden="true"><span class="material-symbols-outlined">' + esc(it.ikon || "star") + "</span></span>";
+  var baslikHtml = baslik ? '<h3 class="modulex-oz2-h">' + (url ? '<a class="modulex-oz2-a" href="' + esc(url) + '">' + esc(baslik) + "</a>" : esc(baslik)) + "</h3>" : "";
+  oz2Cards += '<li class="modulex-oz2-card' + (img ? " modulex-oz2-gorselli" : "") + '">' + medya +
+    '<div class="modulex-oz2-govde">' + baslikHtml +
+    (metin ? '<p class="modulex-oz2-p">' + esc(metin) + "</p>" : "") +
+    (url && oz2Cta ? '<span class="modulex-oz2-more" aria-hidden="true">' + esc(oz2Cta) + '<span class="material-symbols-outlined">arrow_forward</span></span>' : "") +
+    "</div></li>";
 }
 
-var zzEyebrow = zzPick(zzDes.eyebrow);
-var zzTitle = zzPick(zzDes.title);
-var zzDesc = zzPick(zzDes.description);
-var zzHead = "";
-if (zzEyebrow || zzTitle || zzDesc) {
-  zzHead = '<header class="modulex-zz-head">' +
-    (zzEyebrow ? '<p class="modulex-zz-eyebrow">' + zzEsc(zzEyebrow) + "</p>" : "") +
-    (zzTitle ? '<h2 class="modulex-zz-title">' + zzEsc(zzTitle) + "</h2>" : "") +
-    (zzDesc ? '<p class="modulex-zz-desc">' + zzEsc(zzDesc) + "</p>" : "") + "</header>";
+var oz2Head = "";
+if (t(D.eyebrow) || t(D.title) || t(D.description)) {
+  oz2Head = '<header class="modulex-oz2-head">' +
+    (t(D.eyebrow) ? '<p class="modulex-oz2-eyebrow">' + esc(t(D.eyebrow)) + "</p>" : "") +
+    (t(D.title) ? '<h2 class="modulex-oz2-title">' + esc(t(D.title)) + "</h2>" : "") +
+    (t(D.description) ? '<p class="modulex-oz2-desc">' + esc(t(D.description)) + "</p>" : "") + "</header>";
 }
 
-html = html.replace(/\{\{zzclass\}\}/g, function () { return " modulex-zz-" + zzStil; });
-html = html.replace(/\{\{zzhead\}\}/g, function () { return zzHead; });
-html = html.replace(/\{\{zzrows\}\}/g, function () { return zzRows; });
+html = html.replace(/\{\{oz2cols\}\}/g, function () { return String(oz2Cols); });
+html = html.replace(/\{\{oz2head\}\}/g, function () { return oz2Head; });
+html = html.replace(/\{\{oz2cards\}\}/g, function () { return oz2Cards; });
+metinleriYaz();
