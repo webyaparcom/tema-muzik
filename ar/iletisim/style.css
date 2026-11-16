@@ -164,7 +164,7 @@
   .h0001-ust-dikey-cizgi [hidden] { display: none !important; }
   .h0001-ust-dikey-cizgi :where(a, button, summary, [data-cevir]) { cursor: pointer; }
   .h0001-ust-dikey-cizgi :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid var(--mx-site-primary, #2563eb); outline-offset: 3px; }
-  .h0001-ust-dikey-cizgi-ic { max-width: 1200px; margin-inline: auto; }
+  .h0001-ust-dikey-cizgi-ic { max-width: 1360px; margin-inline: auto; }
   .h0001-ust-dikey-cizgi-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
   .h0001-ust-dikey-cizgi--bassiz .h0001-ust-dikey-cizgi-bas { display: none; }
   .h0001-ust-dikey-cizgi-ust { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
@@ -342,7 +342,7 @@
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
-    background-image: url("/img/k8mp01/map.png?v=a2s9d") !important;
+    background-image: url("/img/k8mp01/map.png?v=ks7pm") !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
